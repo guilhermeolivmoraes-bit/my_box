@@ -1,0 +1,40 @@
+{
+  "name": "Sale",
+  "type": "object",
+  "properties": {
+    "sale_date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Data e hora da venda"
+    },
+    "total": {
+      "type": "number",
+      "description": "Valor total da venda"
+    },
+    "items": {
+      "type": "array",
+      "description": "Itens da venda",
+      "items": {
+        "type": "object",
+        "properties": {
+          "product_id": {
+            "type": "string"
+          },
+          "product_name": {
+            "type": "string"
+          },
+          "quantity": {
+            "type": "integer"
+          },
+          "unit_price": {
+            "type": "number"
+          },
+          "subtotal": {
+            "type": "number"
+          }
+        }
+      }
+    }
+  },
+  "required": ["sale_date", "total", "items"]
+}
