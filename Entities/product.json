@@ -1,0 +1,19 @@
+{
+  "name": "Product",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Nome do produto"
+    },
+    "price": {
+      "type": "number",
+      "description": "Pre\u00e7o de venda"
+    },
+    "stock": {
+      "type": "integer",
+      "description": "Quantidade em estoque"
+    }
+  },
+  "required": ["name", "price", "stock"]
+}
